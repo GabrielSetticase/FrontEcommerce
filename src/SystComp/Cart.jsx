@@ -5,11 +5,13 @@ import { useCartStore } from './useCartStore';
 export const Cart = ({ setShowDetail }) => {
     const productsGlobal = useCartStore((state) => state.productos);
     const deleteProduct = useCartStore((state) => state.removeProduct);
+    const cleanCarrito = useCartStore((state) => state.clearCart);
 
     return (
 
 
         <>
+            <button onClick={cleanCarrito}>Vaciar carrito</button>
             <h3>
                 total ${' '}
                 {productsGlobal

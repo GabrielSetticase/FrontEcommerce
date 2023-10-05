@@ -15,7 +15,7 @@ export const Principal = ({ loguear, isAdmin, setShowDetail }) => {
     const [productos, setProductos] = useState([])
     const [nombreFilter, setNombreFilter] = useState("")
     const [priceFilter, setPriceFilter] = useState(0)
-    const [categoryFilter, setCategoryFilter] = useState("")
+    const [categoryFilter, setCategoryFilter] = useState("-")
     const [isSortedFilter, setIsSortedFilter] = useState(false)
     const categorias = productos.map((product) => product.categoria)
     const uniqueCategorias = [...new Set(categorias)]
