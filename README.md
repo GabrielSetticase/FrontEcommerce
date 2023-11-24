@@ -1,4 +1,6 @@
 # React + Vite
+Database is not available
+this is a preliminary version up to be refactoricised. Gabriel Setticase
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
